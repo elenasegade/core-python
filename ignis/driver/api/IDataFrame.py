@@ -12,6 +12,7 @@ class ICacheLevel(enum.Enum):
     MEMORY = 2
     RAW_MEMORY = 3
     DISK = 4
+    CHECKPOINT = 5
 
 
 class IDataFrame:
