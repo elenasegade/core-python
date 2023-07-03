@@ -129,7 +129,7 @@ class ICacheImpl(IBaseImpl):
 				file_cache.write(b'\0')
 				for part_cache in group_cache:
 					file_cache.write(b'\0')
-					file_cache.write(part_cache.getpath().encode())
+					file_cache.write(part_cache.getPath().encode())
 				file_cache.write(b'\n')
 		else:
 			raise ValueError("CacheContext: cache level " + str(level) + " is not valid")
